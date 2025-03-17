@@ -2,7 +2,7 @@
 
 ## Get projects
 ```http
-GET https://studio.cucumber.io/api/projects/ HTTP/1.1
+GET https://studio.cucumberstudio.com/api/projects/ HTTP/1.1
 Accept: application/vnd.api+json; version=1
 access-token: <your access token>
 client: <your client id>
@@ -14,7 +14,7 @@ Content-Type: application/vnd.api+json
 ```
 
 ```shell
-curl "https://studio.cucumber.io/api/projects/" \
+curl "https://studio.cucumberstudio.com/api/projects/" \
     -H 'accept: application/vnd.api+json; version=1' \
     -H 'access-token: <your access token>' \
     -H 'uid: <your uid>' \
@@ -78,7 +78,7 @@ This endpoint retrieves all projects of the logged-in user
 
 ## Get a particular project
 ```http
-GET https://studio.cucumber.io/api/projects/<project_id> HTTP/1.1
+GET https://studio.cucumberstudio.com/api/projects/<project_id> HTTP/1.1
 Accept: application/vnd.api+json; version=1
 access-token: <your access token>
 client: <your client id>
@@ -90,7 +90,7 @@ Content-Type: application/vnd.api+json
 ```
 
 ```shell
-curl "https://studio.cucumber.io/api/projects/<project_id>" \
+curl "https://studio.cucumberstudio.com/api/projects/<project_id>" \
     -H 'accept: application/vnd.api+json; version=1' \
     -H 'access-token: <your access token>' \
     -H 'uid: <your uid>' \
@@ -140,7 +140,7 @@ project_id | The ID of the project you want to retrieve
 ### Create the project backup
 
 ```http
-POST https://studio.cucumber.io/api/projects/<project_id>/backups HTTP/1.1
+POST https://studio.cucumberstudio.com/api/projects/<project_id>/backups HTTP/1.1
 Accept: application/vnd.api+json; version=1
 access-token: <your access token>
 client: <your client id>
@@ -152,7 +152,7 @@ Content-Type: application/vnd.api+json
 ```
 
 ```shell
-curl "https://studio.cucumber.io/api/projects/<project_id>/backups" \
+curl "https://studio.cucumberstudio.com/api/projects/<project_id>/backups" \
     -X POST \
     -H 'accept: application/vnd.api+json; version=1' \
     -H 'access-token: <your access token>' \
@@ -217,7 +217,7 @@ project_id | The ID of the project you want to create the backup for
 ## Get last backup state
 
 ```http
-GET https://studio.cucumber.io/api/projects/<project_id>/backups/last HTTP/1.1
+GET https://studio.cucumberstudio.com/api/projects/<project_id>/backups/last HTTP/1.1
 Accept: application/vnd.api+json; version=1
 access-token: <your access token>
 client: <your client id>
@@ -229,7 +229,7 @@ Content-Type: application/vnd.api+json
 ```
 
 ```shell
-curl "https://studio.cucumber.io/api/projects/<project_id>/backups/last" \
+curl "https://studio.cucumberstudio.com/api/projects/<project_id>/backups/last" \
     -H 'accept: application/vnd.api+json; version=1' \
     -H 'access-token: <your access token>' \
     -H 'uid: <your uid>' \
@@ -276,7 +276,7 @@ project_id | The ID of the project you want to see the last backup of
 ## Getting root scenarios folder of a project
 
 ```http
-GET https://studio.cucumber.io/api/projects?include=scenarios-folder HTTP/1.1
+GET https://studio.cucumberstudio.com/api/projects?include=scenarios-folder HTTP/1.1
 Accept: application/vnd.api+json; version=1
 access-token: <your access token>
 client: <your client id>
@@ -288,7 +288,7 @@ Content-Type: application/vnd.api+json
 ```
 
 ```shell
-curl "https://studio.cucumber.io/api/project?include=scenarios-folder" \
+curl "https://studio.cucumberstudio.com/api/project?include=scenarios-folder" \
     -H 'accept: application/vnd.api+json; version=1' \
     -H 'access-token: <your access token>' \
     -H 'uid: <your uid>' \

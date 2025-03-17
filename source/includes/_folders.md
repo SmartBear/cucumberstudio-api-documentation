@@ -3,7 +3,7 @@
 ## Get folders of a given project
 
 ```http
-GET https://studio.cucumber.io/api/projects/<project_id>/folders HTTP/1.1
+GET https://studio.cucumberstudio.com/api/projects/<project_id>/folders HTTP/1.1
 Accept: application/vnd.api+json; version=1
 access-token: <your access token>
 client: <your client id>
@@ -15,7 +15,7 @@ Content-Type: application/vnd.api+json
 ```
 
 ```shell
-curl "https://studio.cucumber.io/api/projects/<project_id>/folders" \
+curl "https://studio.cucumberstudio.com/api/projects/<project_id>/folders" \
     -H 'accept: application/vnd.api+json; version=1' \
     -H 'access-token: <your access token>' \
     -H 'uid: <your uid>' \
@@ -75,7 +75,7 @@ project_id | The ID of the project you want to retrieve the folders from
 > Find folders by tag key
 
 ```http
-GET https://studio.cucumber.io/api/projects/<project_id>/folders/find_by_tags?key=<tag_key> HTTP/1.1
+GET https://studio.cucumberstudio.com/api/projects/<project_id>/folders/find_by_tags?key=<tag_key> HTTP/1.1
 Accept: application/vnd.api+json; version=1
 access-token: <your access token>
 client: <your client id>
@@ -87,7 +87,7 @@ Content-Type: application/vnd.api+json
 ```
 
 ```shell
-curl "https://studio.cucumber.io/api/projects/<project_id>/folders/find_by_tags?key=<tag_key>" \
+curl "https://studio.cucumberstudio.com/api/projects/<project_id>/folders/find_by_tags?key=<tag_key>" \
     -H 'accept: application/vnd.api+json; version=1' \
     -H 'access-token: <your access token>' \
     -H 'uid: <your uid>' \
@@ -147,7 +147,7 @@ curl "https://studio.cucumber.io/api/projects/<project_id>/folders/find_by_tags?
 > Find folders by tag key and value
 
 ```http
-GET https://studio.cucumber.io/api/projects/<project_id>/folders/find_by_tags?key=<tag_key>&value=<tag_value> HTTP/1.1
+GET https://studio.cucumberstudio.com/api/projects/<project_id>/folders/find_by_tags?key=<tag_key>&value=<tag_value> HTTP/1.1
 Accept: application/vnd.api+json; version=1
 access-token: <your access token>
 client: <your client id>
@@ -159,7 +159,7 @@ Content-Type: application/vnd.api+json
 ```
 
 ```shell
-curl "https://studio.cucumber.io/api/projects/<project_id>/folders/find_by_tags?key=<tag_key>&value=<tag_value>" \
+curl "https://studio.cucumberstudio.com/api/projects/<project_id>/folders/find_by_tags?key=<tag_key>&value=<tag_value>" \
     -H 'accept: application/vnd.api+json; version=1' \
     -H 'access-token: <your access token>' \
     -H 'uid: <your uid>' \
@@ -219,7 +219,7 @@ value | The value of the tag
 ## Get a single folder
 
 ```http
-GET https://studio.cucumber.io/api/projects/<project_id>/folders/<folder_id> HTTP/1.1
+GET https://studio.cucumberstudio.com/api/projects/<project_id>/folders/<folder_id> HTTP/1.1
 Accept: application/vnd.api+json; version=1
 access-token: <your access token>
 client: <your client id>
@@ -231,7 +231,7 @@ Content-Type: application/vnd.api+json
 ```
 
 ```shell
-curl "https://studio.cucumber.io/api/projects/<project_id>/folders/<folder_id>" \
+curl "https://studio.cucumberstudio.com/api/projects/<project_id>/folders/<folder_id>" \
     -H 'accept: application/vnd.api+json; version=1' \
     -H 'access-token: <your access token>' \
     -H 'uid: <your uid>' \
@@ -273,7 +273,7 @@ folder_id | The ID of the folder you want to get
 ## Get children of a folder
 
 ```http
-GET https://studio.cucumber.io/api/projects/<project_id>/folders/<folder_id>/children HTTP/1.1
+GET https://studio.cucumberstudio.com/api/projects/<project_id>/folders/<folder_id>/children HTTP/1.1
 Accept: application/vnd.api+json; version=1
 access-token: <your access token>
 client: <your client id>
@@ -285,7 +285,7 @@ Content-Type: application/vnd.api+json
 ```
 
 ```shell
-curl "https://studio.cucumber.io/api/projects/<project_id>/folders/<folder_id>/children" \
+curl "https://studio.cucumberstudio.com/api/projects/<project_id>/folders/<folder_id>/children" \
     -H 'accept: application/vnd.api+json; version=1' \
     -H 'access-token: <your access token>' \
     -H 'uid: <your uid>' \
@@ -334,7 +334,7 @@ folder_id | The ID of the folder you want to get the children
 ## Get scenarios of a folder
 
 ```http
-GET https://studio.cucumber.io/api/projects/<project_id>/folders/<folder_id>/scenarios HTTP/1.1
+GET https://studio.cucumberstudio.com/api/projects/<project_id>/folders/<folder_id>/scenarios HTTP/1.1
 Accept: application/vnd.api+json; version=1
 access-token: <your access token>
 client: <your client id>
@@ -346,7 +346,7 @@ Content-Type: application/vnd.api+json
 ```
 
 ```shell
-curl "https://studio.cucumber.io/api/projects/<project_id>/folders/<folder_id>/scenarios" \
+curl "https://studio.cucumberstudio.com/api/projects/<project_id>/folders/<folder_id>/scenarios" \
     -H 'accept: application/vnd.api+json; version=1' \
     -H 'access-token: <your access token>' \
     -H 'uid: <your uid>' \
@@ -392,7 +392,7 @@ folder_id | The ID of the folder you want to get the scenarios
 ## Create a folder
 
 ```http
-POST https://studio.cucumber.io/api/projects/<project_id>/folders HTTP/1.1
+POST https://studio.cucumberstudio.com/api/projects/<project_id>/folders HTTP/1.1
 Content-Type: application/json; charset=utf-8
 Accept: application/vnd.api+json; version=1
 access-token: <your access token>
@@ -415,7 +415,7 @@ Content-Type: application/vnd.api+json
 ```
 
 ```shell
-curl -XPOST "https://studio.cucumber.io/api/projects/<project_id>/folders" \
+curl -XPOST "https://studio.cucumberstudio.com/api/projects/<project_id>/folders" \
     -H 'Content-Type: application/json' \
     -H 'accept: application/vnd.api+json; version=1' \
     -H 'access-token: <your access token>' \
@@ -470,7 +470,7 @@ parent-id | (Integer) The id of the folder that will contain the created folder.
 ## Update a folder
 
 ```http
-PATCH https://studio.cucumber.io/api/projects/<project_id>/folders/<folder_id> HTTP/1.1
+PATCH https://studio.cucumberstudio.com/api/projects/<project_id>/folders/<folder_id> HTTP/1.1
 Content-Type: application/json; charset=utf-8
 Accept: application/vnd.api+json; version=1
 access-token: <your access token>
@@ -497,7 +497,7 @@ Content-Type: application/vnd.api+json
 ```
 
 ```shell
-curl -XPATCH "https://studio.cucumber.io/api/projects/<project_id>/folders/<folder_id>" \
+curl -XPATCH "https://studio.cucumberstudio.com/api/projects/<project_id>/folders/<folder_id>" \
     -H 'Content-Type: application/json' \
     -H 'accept: application/vnd.api+json; version=1' \
     -H 'access-token: <your access token>' \
@@ -549,7 +549,7 @@ parent-id  | (Integer) The id of the parent folder.
 ## Delete a folder
 
 ```http
-DELETE https://studio.cucumber.io/api/projects/<project_id>/folders/<folder_id> HTTP/1.1
+DELETE https://studio.cucumberstudio.com/api/projects/<project_id>/folders/<folder_id> HTTP/1.1
 Accept: application/vnd.api+json; version=1
 access-token: <your access token>
 client: <your client id>
@@ -561,7 +561,7 @@ Content-Type: application/vnd.api+json
 ```
 
 ```shell
-curl -XDELETE "https://studio.cucumber.io/api/projects/<project_id>/folders/<folder_id>" \
+curl -XDELETE "https://studio.cucumberstudio.com/api/projects/<project_id>/folders/<folder_id>" \
     -H 'accept: application/vnd.api+json; version=1' \
     -H 'access-token: <your access token>' \
     -H 'uid: <your uid>' \
@@ -588,7 +588,7 @@ folder_id  | The ID of the target folder
 ## Delete a folder children
 
 ```http
-DELETE https://studio.cucumber.io/api/projects/<project_id>/folders/<folder_id>/children HTTP/1.1
+DELETE https://studio.cucumberstudio.com/api/projects/<project_id>/folders/<folder_id>/children HTTP/1.1
 Accept: application/vnd.api+json; version=1
 access-token: <your access token>
 client: <your client id>
@@ -600,7 +600,7 @@ Content-Type: application/vnd.api+json
 ```
 
 ```shell
-curl -XDELETE "https://studio.cucumber.io/api/projects/<project_id>/folders/<folder_id>/children" \
+curl -XDELETE "https://studio.cucumberstudio.com/api/projects/<project_id>/folders/<folder_id>/children" \
     -H 'accept: application/vnd.api+json; version=1' \
     -H 'access-token: <your access token>' \
     -H 'uid: <your uid>' \
@@ -627,7 +627,7 @@ folder_id  | The ID of the target folder
 ## Delete a folder scenarios
 
 ```http
-DELETE https://studio.cucumber.io/api/projects/<project_id>/folders/<folder_id>/scenarios HTTP/1.1
+DELETE https://studio.cucumberstudio.com/api/projects/<project_id>/folders/<folder_id>/scenarios HTTP/1.1
 Accept: application/vnd.api+json; version=1
 access-token: <your access token>
 client: <your client id>
@@ -639,7 +639,7 @@ Content-Type: application/vnd.api+json
 ```
 
 ```shell
-curl -XDELETE "https://studio.cucumber.io/api/projects/<project_id>/folders/<folder_id>/scenarios" \
+curl -XDELETE "https://studio.cucumberstudio.com/api/projects/<project_id>/folders/<folder_id>/scenarios" \
     -H 'accept: application/vnd.api+json; version=1' \
     -H 'access-token: <your access token>' \
     -H 'uid: <your uid>' \
@@ -666,7 +666,7 @@ folder_id  | The ID of the target folder
 ## List attachments of a given folder
 
 ```http
-GET https://studio.cucumber.io/api/projects/<project_id>/folders/<folder_id>/attachments HTTP/1.1
+GET https://studio.cucumberstudio.com/api/projects/<project_id>/folders/<folder_id>/attachments HTTP/1.1
 Accept: application/vnd.api+json; version=1
 access-token: <your access token>
 client: <your client id>
@@ -678,7 +678,7 @@ Content-Type: application/vnd.api+json
 ```
 
 ```shell
-curl -XGET "https://studio.cucumber.io/api/projects/<project_id>/folders/<folder_id>/attachments" \
+curl -XGET "https://studio.cucumberstudio.com/api/projects/<project_id>/folders/<folder_id>/attachments" \
     -H 'Content-Type: application/json' \
     -H 'accept: application/vnd.api+json; version=1' \
     -H 'access-token: <your access token>' \
@@ -718,7 +718,7 @@ folder_id  | The ID of the target folder
 ## Get a given attachment of a given folder
 
 ```http
-GET https://studio.cucumber.io/api/projects/<project_id>/folders/<folder_id>/attachments/<attachment_id> HTTP/1.1
+GET https://studio.cucumberstudio.com/api/projects/<project_id>/folders/<folder_id>/attachments/<attachment_id> HTTP/1.1
 Accept: application/vnd.api+json; version=1
 access-token: <your access token>
 client: <your client id>
@@ -730,7 +730,7 @@ Content-Type: application/vnd.api+json
 ```
 
 ```shell
-curl -XGET -L "https://studio.cucumber.io/api/projects/<project_id>/folders/<folder_id>/attachments/<attachment_id>" \
+curl -XGET -L "https://studio.cucumberstudio.com/api/projects/<project_id>/folders/<folder_id>/attachments/<attachment_id>" \
     -H 'Content-Type: application/json' \
     -H 'accept: application/vnd.api+json; version=1' \
     -H 'access-token: <your access token>' \
@@ -752,7 +752,7 @@ attachment_id  | The ID of the target attachment
 ## Create an attachment to a given folder
 
 ```http
-POST https://studio.cucumber.io/api/projects/<project_id>/folders/<folder_id>/attachments HTTP/1.1
+POST https://studio.cucumberstudio.com/api/projects/<project_id>/folders/<folder_id>/attachments HTTP/1.1
 Accept: application/vnd.api+json; version=1
 access-token: <your access token>
 client: <your client id>
@@ -768,7 +768,7 @@ Content-Type: application/vnd.api+json
 ```
 
 ```shell
-curl -XPOST "https://studio.cucumber.io/api/projects/<project_id>/folders/<folder_id>/attachments" \
+curl -XPOST "https://studio.cucumberstudio.com/api/projects/<project_id>/folders/<folder_id>/attachments" \
     -H 'accept: application/vnd.api+json; version=1' \
     -H 'access-token: <your access token>' \
     -H 'uid: <your uid>' \
@@ -806,7 +806,7 @@ folder_id  | The ID of the target folder
 ## Update an attachment to a given folder
 
 ```http
-PATCH https://studio.cucumber.io/api/projects/<project_id>/folders/<folder_id>/attachments/<attachment_id> HTTP/1.1
+PATCH https://studio.cucumberstudio.com/api/projects/<project_id>/folders/<folder_id>/attachments/<attachment_id> HTTP/1.1
 Accept: application/vnd.api+json; version=1
 access-token: <your access token>
 client: <your client id>
@@ -822,7 +822,7 @@ Content-Type: application/vnd.api+json
 ```
 
 ```shell
-curl -XPATCH "https://studio.cucumber.io/api/projects/<project_id>/folders/<folder_id>/attachments/<attachment_id>" \
+curl -XPATCH "https://studio.cucumberstudio.com/api/projects/<project_id>/folders/<folder_id>/attachments/<attachment_id>" \
     -H 'accept: application/vnd.api+json; version=1' \
     -H 'access-token: <your access token>' \
     -H 'uid: <your uid>' \
@@ -861,7 +861,7 @@ attachment_id  | The ID of the target attachment
 ## Delete an attachment to a given folder
 
 ```http
-DELETE https://studio.cucumber.io/api/projects/<project_id>/folders/<folder_id>/attachments/<attachment_id> HTTP/1.1
+DELETE https://studio.cucumberstudio.com/api/projects/<project_id>/folders/<folder_id>/attachments/<attachment_id> HTTP/1.1
 Accept: application/vnd.api+json; version=1
 access-token: <your access token>
 client: <your client id>
@@ -874,7 +874,7 @@ Content-Type: application/vnd.api+json
 ```
 
 ```shell
-curl -XDELETE "https://studio.cucumber.io/api/projects/<project_id>/folders/<folder_id>/attachments/<attachment_id>" \
+curl -XDELETE "https://studio.cucumberstudio.com/api/projects/<project_id>/folders/<folder_id>/attachments/<attachment_id>" \
     -H 'Content-Type: application/json' \
     -H 'accept: application/vnd.api+json; version=1' \
     -H 'access-token: <your access token>' \

@@ -3,7 +3,7 @@
 ## Get feature from a given folder
 
 ```http
-GET https://studio.cucumber.io/api/projects/<project_id>/folders/<folder_id>/feature HTTP/1.1
+GET https://studio.cucumberstudio.com/api/projects/<project_id>/folders/<folder_id>/feature HTTP/1.1
 Accept: application/vnd.api+json; version=1
 access-token: <your access token>
 client: <your client id>
@@ -16,7 +16,7 @@ Content-Type: application/vnd.api+json
 ```
 
 ```shell
-curl "https://studio.cucumber.io/api/projects/<project_id>/folders</folder_id>/feature" \
+curl "https://studio.cucumberstudio.com/api/projects/<project_id>/folders</folder_id>/feature" \
     -H 'accept: application/vnd.api+json; version=1' \
     -H 'access-token: <your access token>' \
     -H 'uid: <your uid>' \
@@ -63,7 +63,7 @@ folder_id | The ID of the folder you want to get
 ## Create from feature
 
 ```http
-POST https://studio.cucumber.io/api/projects/<project_id>/folders/<folder_id>/create_from_feature HTTP/1.1
+POST https://studio.cucumberstudio.com/api/projects/<project_id>/folders/<folder_id>/create_from_feature HTTP/1.1
 Content-Type: application/json; charset=utf-8
 Accept: application/vnd.api+json; version=1
 access-token: <your access token>
@@ -85,7 +85,7 @@ Content-Type: application/vnd.api+json
 ```
 
 ```shell
-curl -XPOST "https://studio.cucumber.io/api/projects/<project_id>/folders</folder_id>/create_from_feature" \
+curl -XPOST "https://studio.cucumberstudio.com/api/projects/<project_id>/folders</folder_id>/create_from_feature" \
     -H 'Content-Type: application/json' \
     -H 'accept: application/vnd.api+json; version=1' \
     -H 'access-token: <your access token>' \
