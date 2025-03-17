@@ -3,7 +3,7 @@
 ## Get test folders of a test run
 
 ```http
-GET https://studio.cucumber.io/api/projects/<project_id>/test_runs/<test_run_id>/folder_snapshots HTTP/1.1
+GET https://studio.cucumberstudio.com/api/projects/<project_id>/test_runs/<test_run_id>/folder_snapshots HTTP/1.1
 Accept: application/vnd.api+json; version=1
 access-token: <your access token>
 client: <your client id>
@@ -15,7 +15,7 @@ Content-Type: application/vnd.api+json
 ```
 
 ```shell
-curl "https://studio.cucumber.io/api/projects/<project_id>/test_runs/<test_run_id>/folder_snapshots" \
+curl "https://studio.cucumberstudio.com/api/projects/<project_id>/test_runs/<test_run_id>/folder_snapshots" \
     -H 'accept: application/vnd.api+json; version=1' \
     -H 'access-token: <your access token>' \
     -H 'uid: <your uid>' \
@@ -97,7 +97,7 @@ test_run_id | The ID of the test run that contains the test folders you want
 ## Get a test folder
 
 ```http
-GET https://studio.cucumber.io/api/projects/<project_id>/test_runs/<test_run_id>/folder_snapshots/<folder_snapshot_id> HTTP/1.1
+GET https://studio.cucumberstudio.com/api/projects/<project_id>/test_runs/<test_run_id>/folder_snapshots/<folder_snapshot_id> HTTP/1.1
 Accept: application/vnd.api+json; version=1
 access-token: <your access token>
 client: <your client id>
@@ -109,7 +109,7 @@ Content-Type: application/vnd.api+json
 ```
 
 ```shell
-curl "https://studio.cucumber.io/api/projects/<project_id>/test_runs/<test_run_id>/folder_snapshots/<folder_snapshot_id>" \
+curl "https://studio.cucumberstudio.com/api/projects/<project_id>/test_runs/<test_run_id>/folder_snapshots/<folder_snapshot_id>" \
     -H 'accept: application/vnd.api+json; version=1' \
     -H 'access-token: <your access token>' \
     -H 'uid: <your uid>' \
@@ -162,7 +162,7 @@ folder_snapshot_id | The ID of the test folder you want to get
 
 ## Get a test folder additional data
 ```http
-GET https://studio.cucumber.io/api/projects/<project_id>/test_runs/<test_run_id>/folder_snapshots/<folder_snapshot_id>?include=<fields> HTTP/1.1
+GET https://studio.cucumberstudio.com/api/projects/<project_id>/test_runs/<test_run_id>/folder_snapshots/<folder_snapshot_id>?include=<fields> HTTP/1.1
 Accept: application/vnd.api+json; version=1
 access-token: <your access token>
 client: <your client id>
@@ -174,7 +174,7 @@ Content-Type: application/vnd.api+json
 ```
 
 ```shell
-curl "https://studio.cucumber.io/api/projects/<project_id>/test_runs/<test_run_id>/folder_snapshots/<folder_snapshot_id>?include=<fields>" \
+curl "https://studio.cucumberstudio.com/api/projects/<project_id>/test_runs/<test_run_id>/folder_snapshots/<folder_snapshot_id>?include=<fields>" \
     -H 'accept: application/vnd.api+json; version=1' \
     -H 'access-token: <your access token>' \
     -H 'uid: <your uid>' \
@@ -195,7 +195,7 @@ children | The subfolders of the test folder
 test-snapshots | The tests contained by the test folder
 
 ```http
-GET https://studio.cucumber.io/api/projects/<project_id>/test_runs/<test_run_id>/folder_snapshots/<folder_snapshot_id>?include=folder HTTP/1.1
+GET https://studio.cucumberstudio.com/api/projects/<project_id>/test_runs/<test_run_id>/folder_snapshots/<folder_snapshot_id>?include=folder HTTP/1.1
 Accept: application/vnd.api+json; version=1
 access-token: <your access token>
 client: <your client id>
@@ -207,7 +207,7 @@ Content-Type: application/vnd.api+json
 ```
 
 ```shell
-curl "https://studio.cucumber.io/api/projects/<project_id>/test_runs/<test_run_id>/folder_snapshots/<folder_snapshot_id>?include=folder" \
+curl "https://studio.cucumberstudio.com/api/projects/<project_id>/test_runs/<test_run_id>/folder_snapshots/<folder_snapshot_id>?include=folder" \
     -H 'accept: application/vnd.api+json; version=1' \
     -H 'access-token: <your access token>' \
     -H 'uid: <your uid>' \
@@ -217,7 +217,7 @@ curl "https://studio.cucumber.io/api/projects/<project_id>/test_runs/<test_run_i
 > Get a test folder original scenario folder
 
 ```http
-GET https://studio.cucumber.io/api/projects/<project_id>/test_runs/<test_run_id>/folder_snapshots/<folder_snapshot_id>?include=children HTTP/1.1
+GET https://studio.cucumberstudio.com/api/projects/<project_id>/test_runs/<test_run_id>/folder_snapshots/<folder_snapshot_id>?include=children HTTP/1.1
 Accept: application/vnd.api+json; version=1
 access-token: <your access token>
 client: <your client id>
@@ -229,7 +229,7 @@ Content-Type: application/vnd.api+json
 ```
 
 ```shell
-curl "https://studio.cucumber.io/api/projects/<project_id>/test_runs/<test_run_id>/folder_snapshots/<folder_snapshot_id>?include=children" \
+curl "https://studio.cucumberstudio.com/api/projects/<project_id>/test_runs/<test_run_id>/folder_snapshots/<folder_snapshot_id>?include=children" \
     -H 'accept: application/vnd.api+json; version=1' \
     -H 'access-token: <your access token>' \
     -H 'uid: <your uid>' \
@@ -239,7 +239,7 @@ curl "https://studio.cucumber.io/api/projects/<project_id>/test_runs/<test_run_i
 > Get the subfolders of a test folder
 
 ```http
-GET https://studio.cucumber.io/api/projects/<project_id>/test_runs/<test_run_id>/folder_snapshots/<folder_snapshot_id>?include=test-snapshots HTTP/1.1
+GET https://studio.cucumberstudio.com/api/projects/<project_id>/test_runs/<test_run_id>/folder_snapshots/<folder_snapshot_id>?include=test-snapshots HTTP/1.1
 Accept: application/vnd.api+json; version=1
 access-token: <your access token>
 client: <your client id>
@@ -251,7 +251,7 @@ Content-Type: application/vnd.api+json
 ```
 
 ```shell
-curl "https://studio.cucumber.io/api/projects/<project_id>/test_runs/<test_run_id>/folder_snapshots/<folder_snapshot_id>?include=test-snapshots" \
+curl "https://studio.cucumberstudio.com/api/projects/<project_id>/test_runs/<test_run_id>/folder_snapshots/<folder_snapshot_id>?include=test-snapshots" \
     -H 'accept: application/vnd.api+json; version=1' \
     -H 'access-token: <your access token>' \
     -H 'uid: <your uid>' \

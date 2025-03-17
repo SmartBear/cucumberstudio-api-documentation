@@ -3,7 +3,7 @@
 ## Get scenarios of a given project
 
 ```http
-GET https://studio.cucumber.io/api/projects/<project_id>/scenarios[?include=<fields>] HTTP/1.1
+GET https://studio.cucumberstudio.com/api/projects/<project_id>/scenarios[?include=<fields>] HTTP/1.1
 Accept: application/vnd.api+json; version=1
 access-token: <your access token>
 client: <your client id>
@@ -15,7 +15,7 @@ Content-Type: application/vnd.api+json
 ```
 
 ```shell
-curl "https://studio.cucumber.io/api/projects/<project_id>/scenarios[?include=<fields>]" \
+curl "https://studio.cucumberstudio.com/api/projects/<project_id>/scenarios[?include=<fields>]" \
     -H 'accept: application/vnd.api+json; version=1' \
     -H 'access-token: <your access token>' \
     -H 'uid: <your uid>' \
@@ -98,7 +98,7 @@ project_id | The ID of the project you want to retrieve the scenarios from
 > Find scenarios by tags key
 
 ```http
-GET https://studio.cucumber.io/api/projects/<project_id>/scenarios/find_by_tags?key=<tag_key> HTTP/1.1
+GET https://studio.cucumberstudio.com/api/projects/<project_id>/scenarios/find_by_tags?key=<tag_key> HTTP/1.1
 Accept: application/vnd.api+json; version=1
 access-token: <your access token>
 client: <your client id>
@@ -110,7 +110,7 @@ Content-Type: application/vnd.api+json
 ```
 
 ```shell
-curl "https://studio.cucumber.io/api/projects/<project_id>/scenarios/find_by_tags?key=<tag_key>" \
+curl "https://studio.cucumberstudio.com/api/projects/<project_id>/scenarios/find_by_tags?key=<tag_key>" \
     -H 'accept: application/vnd.api+json; version=1' \
     -H 'access-token: <your access token>' \
     -H 'uid: <your uid>' \
@@ -166,7 +166,7 @@ curl "https://studio.cucumber.io/api/projects/<project_id>/scenarios/find_by_tag
 > Find scenarios by tags key and value
 
 ```http
-GET https://studio.cucumber.io/api/projects/<project_id>/scenarios/find_by_tags?key=<tag_key>&value=<tag_value> HTTP/1.1
+GET https://studio.cucumberstudio.com/api/projects/<project_id>/scenarios/find_by_tags?key=<tag_key>&value=<tag_value> HTTP/1.1
 Accept: application/vnd.api+json; version=1
 access-token: <your access token>
 client: <your client id>
@@ -178,7 +178,7 @@ Content-Type: application/vnd.api+json
 ```
 
 ```shell
-curl "https://studio.cucumber.io/api/projects/<project_id>/scenarios/find_by_tags?key=<tag_key>&value=<tag_value>" \
+curl "https://studio.cucumberstudio.com/api/projects/<project_id>/scenarios/find_by_tags?key=<tag_key>&value=<tag_value>" \
     -H 'accept: application/vnd.api+json; version=1' \
     -H 'access-token: <your access token>' \
     -H 'uid: <your uid>' \
@@ -235,7 +235,7 @@ value | The value of the tag
 ## Get a single scenario
 
 ```http
-GET https://studio.cucumber.io/api/projects/<project_id>/scenarios/<scenario_id>[?include=<fields>] HTTP/1.1
+GET https://studio.cucumberstudio.com/api/projects/<project_id>/scenarios/<scenario_id>[?include=<fields>] HTTP/1.1
 Accept: application/vnd.api+json; version=1
 access-token: <your access token>
 client: <your client id>
@@ -247,7 +247,7 @@ Content-Type: application/vnd.api+json
 ```
 
 ```shell
-curl "https://studio.cucumber.io/api/projects/<project_id>/scenarios/<scenario_id>[?include=<fields>]" \
+curl "https://studio.cucumberstudio.com/api/projects/<project_id>/scenarios/<scenario_id>[?include=<fields>]" \
     -H 'accept: application/vnd.api+json; version=1' \
     -H 'access-token: <your access token>' \
     -H 'uid: <your uid>' \
@@ -302,7 +302,7 @@ scenario_id | The ID of the scenario you want to get
 ## Create a scenario
 
 ```http
-POST https://studio.cucumber.io/api/projects/<project_id>/scenarios HTTP/1.1
+POST https://studio.cucumberstudio.com/api/projects/<project_id>/scenarios HTTP/1.1
 Content-Type: application/json; charset=utf-8
 Accept: application/vnd.api+json; version=1
 access-token: <your access token>
@@ -325,7 +325,7 @@ Content-Type: application/vnd.api+json
 ```
 
 ```shell
-curl -XPOST "https://studio.cucumber.io/api/projects/<project_id>/scenarios" \
+curl -XPOST "https://studio.cucumberstudio.com/api/projects/<project_id>/scenarios" \
     -H 'Content-Type: application/json' \
     -H 'accept: application/vnd.api+json; version=1' \
     -H 'access-token: <your access token>' \
@@ -393,7 +393,7 @@ You can create tags alongside the scenario by specifying them in the "relationsh
 ## Update a scenario
 
 ```http
-PATCH https://studio.cucumber.io/api/projects/<project_id>/scenarios/<scenario_id> HTTP/1.1
+PATCH https://studio.cucumberstudio.com/api/projects/<project_id>/scenarios/<scenario_id> HTTP/1.1
 Content-Type: application/json; charset=utf-8
 Accept: application/vnd.api+json; version=1
 access-token: <your access token>
@@ -420,7 +420,7 @@ Content-Type: application/vnd.api+json
 ```
 
 ```shell
-curl -XPATCH "https://studio.cucumber.io/api/projects/<project_id>/scenarios/<scenario_id>" \
+curl -XPATCH "https://studio.cucumberstudio.com/api/projects/<project_id>/scenarios/<scenario_id>" \
     -H 'Content-Type: application/json' \
     -H 'accept: application/vnd.api+json; version=1' \
     -H 'access-token: <your access token>' \
@@ -472,7 +472,7 @@ You can rename a scenario and update its definition by specifying the new name i
 ## Delete a scenario
 
 ```http
-DELETE https://studio.cucumber.io/api/projects/<project_id>/scenarios/<scenario_id> HTTP/1.1
+DELETE https://studio.cucumberstudio.com/api/projects/<project_id>/scenarios/<scenario_id> HTTP/1.1
 Accept: application/vnd.api+json; version=1
 access-token: <your access token>
 client: <your client id>
@@ -484,7 +484,7 @@ Content-Type: application/vnd.api+json
 ```
 
 ```shell
-curl -XDELETE "https://studio.cucumber.io/api/projects/<project_id>/scenarios/<scenario_id>" \
+curl -XDELETE "https://studio.cucumberstudio.com/api/projects/<project_id>/scenarios/<scenario_id>" \
     -H 'accept: application/vnd.api+json; version=1' \
     -H 'access-token: <your access token>' \
     -H 'uid: <your uid>' \
@@ -507,7 +507,7 @@ Caution: your scenario will be totaly and permanently removed from your project.
 ## List attachments of a given scenario
 
 ```http
-GET https://studio.cucumber.io/api/projects/<project_id>/scenarios/<scenario_id>/attachments HTTP/1.1
+GET https://studio.cucumberstudio.com/api/projects/<project_id>/scenarios/<scenario_id>/attachments HTTP/1.1
 Accept: application/vnd.api+json; version=1
 access-token: <your access token>
 client: <your client id>
@@ -519,7 +519,7 @@ Content-Type: application/vnd.api+json
 ```
 
 ```shell
-curl -XGET "https://studio.cucumber.io/api/projects/<project_id>/scenarios/<scenario_id>/attachments" \
+curl -XGET "https://studio.cucumberstudio.com/api/projects/<project_id>/scenarios/<scenario_id>/attachments" \
     -H 'Content-Type: application/json' \
     -H 'accept: application/vnd.api+json; version=1' \
     -H 'access-token: <your access token>' \
@@ -559,7 +559,7 @@ scenario_id  | The ID of the target scenario
 ## Get a given attachment of a given scenario
 
 ```http
-GET https://studio.cucumber.io/api/projects/<project_id>/scenarios/<scenario_id>/attachments/<attachment_id> HTTP/1.1
+GET https://studio.cucumberstudio.com/api/projects/<project_id>/scenarios/<scenario_id>/attachments/<attachment_id> HTTP/1.1
 Accept: application/vnd.api+json; version=1
 access-token: <your access token>
 client: <your client id>
@@ -572,7 +572,7 @@ Content-Type: application/vnd.api+json
 ```
 
 ```shell
-curl -XGET -L "https://studio.cucumber.io/api/projects/<project_id>/scenarios/<scenario_id>/attachments/<attachment_id>" \
+curl -XGET -L "https://studio.cucumberstudio.com/api/projects/<project_id>/scenarios/<scenario_id>/attachments/<attachment_id>" \
     -H 'Content-Type: application/json' \
     -H 'accept: application/vnd.api+json; version=1' \
     -H 'access-token: <your access token>' \
@@ -594,7 +594,7 @@ attachment_id  | The ID of the target attachment
 ## Create an attachment to a given scenario
 
 ```http
-POST https://studio.cucumber.io/api/projects/<project_id>/scenarios/<scenario_id>/attachments HTTP/1.1
+POST https://studio.cucumberstudio.com/api/projects/<project_id>/scenarios/<scenario_id>/attachments HTTP/1.1
 Accept: application/vnd.api+json; version=1
 access-token: <your access token>
 client: <your client id>
@@ -610,7 +610,7 @@ Content-Type: application/vnd.api+json
 ```
 
 ```shell
-curl -XPOST "https://studio.cucumber.io/api/projects/<project_id>/scenarios/<scenario_id>/attachments" \
+curl -XPOST "https://studio.cucumberstudio.com/api/projects/<project_id>/scenarios/<scenario_id>/attachments" \
     -H 'accept: application/vnd.api+json; version=1' \
     -H 'access-token: <your access token>' \
     -H 'uid: <your uid>' \
@@ -648,7 +648,7 @@ scenario_id  | The ID of the target scenario
 ## Update an attachment to a given scenario
 
 ```http
-PATCH https://studio.cucumber.io/api/projects/<project_id>/scenarios/<scenario_id>/attachments/<attachment_id> HTTP/1.1
+PATCH https://studio.cucumberstudio.com/api/projects/<project_id>/scenarios/<scenario_id>/attachments/<attachment_id> HTTP/1.1
 Accept: application/vnd.api+json; version=1
 access-token: <your access token>
 client: <your client id>
@@ -664,7 +664,7 @@ Content-Type: application/vnd.api+json
 ```
 
 ```shell
-curl -XPATCH "https://studio.cucumber.io/api/projects/<project_id>/scenarios/<scenario_id>/attachments/<attachment_id>" \
+curl -XPATCH "https://studio.cucumberstudio.com/api/projects/<project_id>/scenarios/<scenario_id>/attachments/<attachment_id>" \
     -H 'accept: application/vnd.api+json; version=1' \
     -H 'access-token: <your access token>' \
     -H 'uid: <your uid>' \
@@ -703,7 +703,7 @@ attachment_id  | The ID of the target attachment
 ## Delete an attachment to a given scenario
 
 ```http
-DELETE https://studio.cucumber.io/api/projects/<project_id>/scenarios/<scenario_id>/attachments/<attachment_id> HTTP/1.1
+DELETE https://studio.cucumberstudio.com/api/projects/<project_id>/scenarios/<scenario_id>/attachments/<attachment_id> HTTP/1.1
 Accept: application/vnd.api+json; version=1
 access-token: <your access token>
 client: <your client id>
@@ -716,7 +716,7 @@ Content-Type: application/vnd.api+json
 ```
 
 ```shell
-curl -XDELETE "https://studio.cucumber.io/api/projects/<project_id>/scenarios/<scenario_id>/attachments/<attachment_id>" \
+curl -XDELETE "https://studio.cucumberstudio.com/api/projects/<project_id>/scenarios/<scenario_id>/attachments/<attachment_id>" \
     -H 'Content-Type: application/json' \
     -H 'accept: application/vnd.api+json; version=1' \
     -H 'access-token: <your access token>' \

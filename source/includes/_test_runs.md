@@ -2,7 +2,7 @@
 ## Get test runs of a project
 
 ```http
-GET https://studio.cucumber.io/api/projects/<project_id>/test_runs HTTP/1.1
+GET https://studio.cucumberstudio.com/api/projects/<project_id>/test_runs HTTP/1.1
 Accept: application/vnd.api+json; version=1
 access-token: <your access token>
 client: <your client id>
@@ -14,7 +14,7 @@ Content-Type: application/vnd.api+json
 ```
 
 ```shell
-curl "https://studio.cucumber.io/api/projects/<project_id>/test_runs" \
+curl "https://studio.cucumberstudio.com/api/projects/<project_id>/test_runs" \
     -H 'accept: application/vnd.api+json; version=1' \
     -H 'access-token: <your access token>' \
     -H 'uid: <your uid>' \
@@ -87,9 +87,9 @@ This endpoint retrieves all test runs of a given project. The order is undefined
 <p>Note: you can use the "filter[status]" parameter to only fetch archived or active test runs
 as a query string of the request:</p>
 <code>
-https://studio.cucumber.io/api/projects/&lt;project_id&gt;/test_runs?filter[status]=active
+https://studio.cucumberstudio.com/api/projects/&lt;project_id&gt;/test_runs?filter[status]=active
 </code><br /><code>
-https://studio.cucumber.io/api/projects/&lt;project_id&gt;/test_runs?filter[status]=archived
+https://studio.cucumberstudio.com/api/projects/&lt;project_id&gt;/test_runs?filter[status]=archived
 </code>
 </aside>
 
@@ -103,7 +103,7 @@ filter[status]     | "active" or "archived"
 ## Get a single test run
 
 ```http
-GET https://studio.cucumber.io/api/projects/<project_id>/test_runs/<test_run_id> HTTP/1.1
+GET https://studio.cucumberstudio.com/api/projects/<project_id>/test_runs/<test_run_id> HTTP/1.1
 Accept: application/vnd.api+json; version=1
 access-token: <your access token>
 client: <your client id>
@@ -115,7 +115,7 @@ Content-Type: application/vnd.api+json
 ```
 
 ```shell
-curl "https://studio.cucumber.io/api/projects/<project_id>/test_runs/<test_run_id>" \
+curl "https://studio.cucumberstudio.com/api/projects/<project_id>/test_runs/<test_run_id>" \
     -H 'accept: application/vnd.api+json; version=1' \
     -H 'access-token: <your access token>' \
     -H 'uid: <your uid>' \
@@ -168,7 +168,7 @@ test_run_id | The ID of the test run you want to get
 ## Archive test runs
 
 ```http
-POST https://studio.cucumber.io/api/projects/<project_id>/test_runs/archive?older_than=2021-02-13 HTTP/1.1
+POST https://studio.cucumberstudio.com/api/projects/<project_id>/test_runs/archive?older_than=2021-02-13 HTTP/1.1
 Accept: application/vnd.api+json; version=1
 access-token: <your access token>
 client: <your client id>
@@ -181,7 +181,7 @@ Content-Type: application/vnd.api+json
 ```
 
 ```shell
-curl -X POST "https://studio.cucumber.io/api/projects/<project_id>/test_runs/archive?older_than=2021-02-13" \
+curl -X POST "https://studio.cucumberstudio.com/api/projects/<project_id>/test_runs/archive?older_than=2021-02-13" \
     -H 'accept: application/vnd.api+json; version=1' \
     -H 'access-token: <your access token>' \
     -H 'uid: <your uid>' \
@@ -207,7 +207,7 @@ older_than | An ISO 8601 date (YYYY-MM-DD). All test runs created before this da
 ## Include tags when fetching your test run(s)
 
 ```http
-GET https://studio.cucumber.io/api/projects/<project_id>/test_runs?include=tags HTTP/1.1
+GET https://studio.cucumberstudio.com/api/projects/<project_id>/test_runs?include=tags HTTP/1.1
 Accept: application/vnd.api+json; version=1
 access-token: <your access token>
 client: <your client id>
@@ -219,7 +219,7 @@ Content-Type: application/vnd.api+json
 ```
 
 ```shell
-curl "https://studio.cucumber.io/api/projects/<project_id>/test_runs?include=tags" \
+curl "https://studio.cucumberstudio.com/api/projects/<project_id>/test_runs?include=tags" \
     -H 'accept: application/vnd.api+json; version=1' \
     -H 'access-token: <your access token>' \
     -H 'uid: <your uid>' \
@@ -232,7 +232,7 @@ You can use the JSONAPI [include syntax](http://jsonapi.org/format/#fetching-inc
 ## Create a test run
 
 ```http
-POST https://studio.cucumber.io/api/projects/<project_id>/test_runs HTTP/1.1
+POST https://studio.cucumberstudio.com/api/projects/<project_id>/test_runs HTTP/1.1
 Content-Type: application/json; charset=utf-8
 Accept: application/vnd.api+json; version=1
 access-token: <your access token>
@@ -257,7 +257,7 @@ Content-Type: application/vnd.api+json
 ```
 
 ```shell
-curl -X POST "https://studio.cucumber.io/api/projects/<project_id>/test_runs" \
+curl -X POST "https://studio.cucumberstudio.com/api/projects/<project_id>/test_runs" \
     -H 'Content-Type: application/json' \
     -H 'accept: application/vnd.api+json; version=1' \
     -H 'access-token: <your access token>' \
@@ -342,7 +342,7 @@ be created empty.
 ## Update test run description
 
 ```http
-PATCH https://studio.cucumber.io/api/projects/<project_id>/test_runs/<test_run_id> HTTP/1.1
+PATCH https://studio.cucumberstudio.com/api/projects/<project_id>/test_runs/<test_run_id> HTTP/1.1
 Accept: application/vnd.api+json; version=1
 access-token: <your access token>
 client: <your client id>
@@ -366,7 +366,7 @@ Content-Type: application/vnd.api+json
 ```
 
 ```shell
-curl -X PATCH "https://studio.cucumber.io/api/projects/<project_id>/test_runs/<test_run_id>" \
+curl -X PATCH "https://studio.cucumberstudio.com/api/projects/<project_id>/test_runs/<test_run_id>" \
     -H 'accept: application/vnd.api+json; version=1' \
     -H 'access-token: <your access token>' \
     -H 'uid: <your uid>' \
@@ -404,7 +404,7 @@ This endpoint updates the description of a given test run.
 ## Clone a test run
 
 ```http
-POST https://studio.cucumber.io/api/projects/<project_id>/test_runs HTTP/1.1
+POST https://studio.cucumberstudio.com/api/projects/<project_id>/test_runs HTTP/1.1
 Accept: application/vnd.api+json; version=1
 access-token: <your access token>
 client: <your client id>
@@ -427,7 +427,7 @@ Content-Type: application/vnd.api+json
 ```
 
 ```shell
-curl -X POST "https://studio.cucumber.io/api/projects/<project_id>/test_runs" \
+curl -X POST "https://studio.cucumberstudio.com/api/projects/<project_id>/test_runs" \
     -H 'accept: application/vnd.api+json; version=1' \
     -H 'access-token: <your access token>' \
     -H 'uid: <your uid>' \
@@ -481,7 +481,7 @@ Synchronization give you the ability to update the tests of your test run with t
 
 ### Watch synchronization state
 ```http
-GET https://studio.cucumber.io/api/projects/<project_id>/test_runs/<test_run_id>?show_synchronization_information=true HTTP/1.1
+GET https://studio.cucumberstudio.com/api/projects/<project_id>/test_runs/<test_run_id>?show_synchronization_information=true HTTP/1.1
 Accept: application/vnd.api+json; version=1
 access-token: <your access token>
 client: <your client id>
@@ -493,7 +493,7 @@ Content-Type: application/vnd.api+json
 ```
 
 ```shell
-curl "https://studio.cucumber.io/api/projects/<project_id>/test_runs/<test_run_id>?show_synchronization_information=true" \
+curl "https://studio.cucumberstudio.com/api/projects/<project_id>/test_runs/<test_run_id>?show_synchronization_information=true" \
     -H 'accept: application/vnd.api+json; version=1' \
     -H 'access-token: <your access token>' \
     -H 'uid: <your uid>' \
@@ -550,7 +550,7 @@ It is strongly advised to use this endpoint to get the potential impacts of a sy
 ### Synchronize the test run
 
 ```http
-POST https://studio.cucumber.io/api/projects/<project_id>/test_runs/<test_run_id>/synchronize HTTP/1.1
+POST https://studio.cucumberstudio.com/api/projects/<project_id>/test_runs/<test_run_id>/synchronize HTTP/1.1
 Content-Type: application/json; charset=utf-8
 Accept: application/vnd.api+json; version=1
 access-token: <your access token>
@@ -564,7 +564,7 @@ Content-Type: application/vnd.api+json
 ```
 
 ```shell
-curl -X POST "https://studio.cucumber.io/api/projects/<project_id>/test_runs/<test_run_id>/synchronize" \
+curl -X POST "https://studio.cucumberstudio.com/api/projects/<project_id>/test_runs/<test_run_id>/synchronize" \
     -H 'Content-Type: application/json' \
     -H 'accept: application/vnd.api+json; version=1' \
     -H 'access-token: <your access token>' \
@@ -642,7 +642,7 @@ test_run_id | The ID of the test run you want to synchronize
 ## Get builds history of a test run
 
 ```http
-GET https://studio.cucumber.io/api/projects/<project_id>/test_runs/<test_run_id>/build_history HTTP/1.1
+GET https://studio.cucumberstudio.com/api/projects/<project_id>/test_runs/<test_run_id>/build_history HTTP/1.1
 Accept: application/vnd.api+json; version=1
 access-token: <your access token>
 client: <your client id>
@@ -654,7 +654,7 @@ Content-Type: application/vnd.api+json
 ```
 
 ```shell
-curl "https://studio.cucumber.io/api/projects/<project_id>/test_runs/<test_run_id>/build_history" \
+curl "https://studio.cucumberstudio.com/api/projects/<project_id>/test_runs/<test_run_id>/build_history" \
     -H 'accept: application/vnd.api+json; version=1' \
     -H 'access-token: <your access token>' \
     -H 'uid: <your uid>' \
@@ -727,7 +727,7 @@ You can override this limit by including a query parameter ex: ?limit=10.
 ## Add a scenario to an existing test run
 
 ```http
-PATCH https://studio.cucumber.io/api/projects/<project_id>/test_runs/<test_run_id> HTTP/1.1
+PATCH https://studio.cucumberstudio.com/api/projects/<project_id>/test_runs/<test_run_id> HTTP/1.1
 Content-Type: application/json; charset=utf-8
 Accept: application/vnd.api+json; version=1
 access-token: <your access token>
@@ -752,7 +752,7 @@ Content-Type: application/vnd.api+json
 ```
 
 ```shell
-curl -XPATCH https://studio.cucumber.io/api/projects/<project_id>/test_runs/<test_run_id> \
+curl -XPATCH https://studio.cucumberstudio.com/api/projects/<project_id>/test_runs/<test_run_id> \
     -H 'Content-Type: application/json' \
     -H 'accept: application/vnd.api+json; version=1' \
     -H 'access-token: <your access token>' \
@@ -801,7 +801,7 @@ This endpoint adds a scenario to a given test run.
 ## Add multiple scenarios to an existing test run
 
 ```http
-PATCH https://studio.cucumber.io/api/projects/<project_id>/test_runs/<test_run_id> HTTP/1.1
+PATCH https://studio.cucumberstudio.com/api/projects/<project_id>/test_runs/<test_run_id> HTTP/1.1
 Content-Type: application/json; charset=utf-8
 Accept: application/vnd.api+json; version=1
 access-token: <your access token>
@@ -826,7 +826,7 @@ Content-Type: application/vnd.api+json
 ```
 
 ```shell
-curl -XPATCH https://studio.cucumber.io/api/projects/<project_id>/test_runs/<test_run_id> \
+curl -XPATCH https://studio.cucumberstudio.com/api/projects/<project_id>/test_runs/<test_run_id> \
     -H 'Content-Type: application/json' \
     -H 'accept: application/vnd.api+json; version=1' \
     -H 'access-token: <your access token>' \
@@ -882,7 +882,7 @@ test_run_id | The ID of the test run you want to get
 ## List attachments of a given test run
 
 ```http
-GET https://studio.cucumber.io/api/projects/<project_id>/test_runs/<test_run_id>/attachments HTTP/1.1
+GET https://studio.cucumberstudio.com/api/projects/<project_id>/test_runs/<test_run_id>/attachments HTTP/1.1
 Accept: application/vnd.api+json; version=1
 access-token: <your access token>
 client: <your client id>
@@ -895,7 +895,7 @@ Content-Type: application/vnd.api+json
 ```
 
 ```shell
-curl -XGET "https://studio.cucumber.io/api/projects/<project_id>/test_runs/<test_run_id>/attachments" \
+curl -XGET "https://studio.cucumberstudio.com/api/projects/<project_id>/test_runs/<test_run_id>/attachments" \
     -H 'Content-Type: application/json' \
     -H 'accept: application/vnd.api+json; version=1' \
     -H 'access-token: <your access token>' \
@@ -935,7 +935,7 @@ test_run_id | The ID of the target test run
 ## Get a given attachment of a given test run
 
 ```http
-GET https://studio.cucumber.io/api/projects/<project_id>/test_runs/<test_run_id>/attachments/<attachment_id> HTTP/1.1
+GET https://studio.cucumberstudio.com/api/projects/<project_id>/test_runs/<test_run_id>/attachments/<attachment_id> HTTP/1.1
 Accept: application/vnd.api+json; version=1
 access-token: <your access token>
 client: <your client id>
@@ -948,7 +948,7 @@ Content-Type: application/vnd.api+json
 ```
 
 ```shell
-curl -XGET -L "https://studio.cucumber.io/api/projects/<project_id>/test_runs/<test_run_id>/attachments/<attachment_id>" \
+curl -XGET -L "https://studio.cucumberstudio.com/api/projects/<project_id>/test_runs/<test_run_id>/attachments/<attachment_id>" \
     -H 'Content-Type: application/json' \
     -H 'accept: application/vnd.api+json; version=1' \
     -H 'access-token: <your access token>' \
@@ -970,7 +970,7 @@ attachment_id  | The ID of the target attachment
 ## Create an attachment to a given test run
 
 ```http
-POST https://studio.cucumber.io/api/projects/<project_id>/test_runs/<test_run_id>/attachments HTTP/1.1
+POST https://studio.cucumberstudio.com/api/projects/<project_id>/test_runs/<test_run_id>/attachments HTTP/1.1
 Accept: application/vnd.api+json; version=1
 access-token: <your access token>
 client: <your client id>
@@ -986,7 +986,7 @@ Content-Type: application/vnd.api+json
 ```
 
 ```shell
-curl -X POST "https://studio.cucumber.io/api/projects/<project_id>/test_runs/<test_run_id>/attachments" \
+curl -X POST "https://studio.cucumberstudio.com/api/projects/<project_id>/test_runs/<test_run_id>/attachments" \
     -H 'accept: application/vnd.api+json; version=1' \
     -H 'access-token: <your access token>' \
     -H 'uid: <your uid>' \
@@ -1024,7 +1024,7 @@ test_run_id | The ID of the target test run
 ## Update an attachment to a given test run
 
 ```http
-PATCH https://studio.cucumber.io/api/projects/<project_id>/test_runs/<test_run_id>/attachments/<attachment_id> HTTP/1.1
+PATCH https://studio.cucumberstudio.com/api/projects/<project_id>/test_runs/<test_run_id>/attachments/<attachment_id> HTTP/1.1
 Accept: application/vnd.api+json; version=1
 access-token: <your access token>
 client: <your client id>
@@ -1039,7 +1039,7 @@ Content-Type: application/vnd.api+json
 ```
 
 ```shell
-curl -XPATCH "https://studio.cucumber.io/api/projects/<project_id>/test_runs/<test_run_id>/attachments/<attachment_id>" \
+curl -XPATCH "https://studio.cucumberstudio.com/api/projects/<project_id>/test_runs/<test_run_id>/attachments/<attachment_id>" \
     -H 'accept: application/vnd.api+json; version=1' \
     -H 'access-token: <your access token>' \
     -H 'uid: <your uid>' \
@@ -1078,7 +1078,7 @@ attachment_id | The ID of the target attachment
 ## Delete an attachment to a given test run
 
 ```http
-DELETE https://studio.cucumber.io/api/projects/<project_id>/test_runs/<test_run_id>/attachments/<attachment_id> HTTP/1.1
+DELETE https://studio.cucumberstudio.com/api/projects/<project_id>/test_runs/<test_run_id>/attachments/<attachment_id> HTTP/1.1
 Accept: application/vnd.api+json; version=1
 access-token: <your access token>
 client: <your client id>
@@ -1091,7 +1091,7 @@ Content-Type: application/vnd.api+json
 ```
 
 ```shell
-curl -XDELETE "https://studio.cucumber.io/api/projects/<project_id>/test_runs/<test_run_id>/attachments/<attachment_id>" \
+curl -XDELETE "https://studio.cucumberstudio.com/api/projects/<project_id>/test_runs/<test_run_id>/attachments/<attachment_id>" \
     -H 'Content-Type: application/json' \
     -H 'accept: application/vnd.api+json; version=1' \
     -H 'access-token: <your access token>' \

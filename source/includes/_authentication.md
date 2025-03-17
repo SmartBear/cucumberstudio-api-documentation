@@ -3,7 +3,7 @@
 > To get your credentials:
 
 ```http
-POST https://studio.cucumber.io/api/auth/sign_in HTTP/1.1
+POST https://studio.cucumberstudio.com/api/auth/sign_in HTTP/1.1
 Content-Type: application/json
 
 {"email": "my_cucumberstudio_account", "password": "my_cucumberstudio_account"}
@@ -23,7 +23,7 @@ uid: my_cucumberstudio_account
 curl -XPOST \
     -H "Content-Type: application/json" \
     -d '{"email": "my_cucumberstudio_account", "password": "my_cucumberstudio_account"}' \
-    -D - https://studio.cucumber.io/api/auth/sign_in
+    -D - https://studio.cucumberstudio.com/api/auth/sign_in
 
 HTTP/1.1 200 OK
 # snip.
@@ -39,7 +39,7 @@ uid: my_cucumberstudio_account
 > An API call example
 
 ```http
-GET https://studio.cucumber.io/api/<endpoint> HTTP/1.1
+GET https://studio.cucumberstudio.com/api/<endpoint> HTTP/1.1
 Accept: application/vnd.api+json; version=1
 access-token: <your access token>
 client: <your client id>
@@ -47,7 +47,7 @@ uid: <your uid>
 ```
 
 ```shell
-curl https://studio.cucumber.io/api/<endpoint> \
+curl https://studio.cucumberstudio.com/api/<endpoint> \
     -H 'accept: application/vnd.api+json; version=1' \
     -H 'access-token: <your access token>' \
     -H 'uid: <your uid>' \

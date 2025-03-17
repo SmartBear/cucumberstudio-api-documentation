@@ -3,7 +3,7 @@
 ## Get action words of a given project
 
 ```http
-GET https://studio.cucumber.io/api/projects/<project_id>/actionwords HTTP/1.1
+GET https://studio.cucumberstudio.com/api/projects/<project_id>/actionwords HTTP/1.1
 Accept: application/vnd.api+json; version=1
 access-token: <your access token>
 client: <your client id>
@@ -16,7 +16,7 @@ Content-Type: application/vnd.api+json
 ```
 
 ```shell
-curl "https://studio.cucumber.io/api/projects/<project_id>/actionwords" \
+curl "https://studio.cucumberstudio.com/api/projects/<project_id>/actionwords" \
     -H 'accept: application/vnd.api+json; version=1' \
     -H 'access-token: <your access token>' \
     -H 'uid: <your uid>' \
@@ -77,7 +77,7 @@ project_id | The ID of the project you want to retrieve the actionwords from
 > Find actionwords by tags key
 
 ```http
-GET https://studio.cucumber.io/api/projects/<project_id>/actionwords/find_by_tags?key=<tag_key> HTTP/1.1
+GET https://studio.cucumberstudio.com/api/projects/<project_id>/actionwords/find_by_tags?key=<tag_key> HTTP/1.1
 Accept: application/vnd.api+json; version=1
 access-token: <your access token>
 client: <your client id>
@@ -89,7 +89,7 @@ Content-Type: application/vnd.api+json
 ```
 
 ```shell
-curl "https://studio.cucumber.io/api/projects/<project_id>/actionwords/find_by_tags?key=<tag_key>" \
+curl "https://studio.cucumberstudio.com/api/projects/<project_id>/actionwords/find_by_tags?key=<tag_key>" \
     -H 'accept: application/vnd.api+json; version=1' \
     -H 'access-token: <your access token>' \
     -H 'uid: <your uid>' \
@@ -151,7 +151,7 @@ curl "https://studio.cucumber.io/api/projects/<project_id>/actionwords/find_by_t
 > Find actionwords by tags key and value
 
 ```http
-GET https://studio.cucumber.io/api/projects/<project_id>/actionwords/find_by_tags?key=<tag_key>&value=<tag_value> HTTP/1.1
+GET https://studio.cucumberstudio.com/api/projects/<project_id>/actionwords/find_by_tags?key=<tag_key>&value=<tag_value> HTTP/1.1
 Accept: application/vnd.api+json; version=1
 access-token: <your access token>
 client: <your client id>
@@ -163,7 +163,7 @@ Content-Type: application/vnd.api+json
 ```
 
 ```shell
-curl "https://studio.cucumber.io/api/projects/<project_id>/actionwords/find_by_tags?key=<tag_key>&value=<tag_value>" \
+curl "https://studio.cucumberstudio.com/api/projects/<project_id>/actionwords/find_by_tags?key=<tag_key>&value=<tag_value>" \
     -H 'accept: application/vnd.api+json; version=1' \
     -H 'access-token: <your access token>' \
     -H 'uid: <your uid>' \
@@ -223,7 +223,7 @@ value | The value of the tag
 ## Get a single action word
 
 ```http
-GET https://studio.cucumber.io/api/projects/<project_id>/actionwords/<actionword_id> HTTP/1.1
+GET https://studio.cucumberstudio.com/api/projects/<project_id>/actionwords/<actionword_id> HTTP/1.1
 Accept: application/vnd.api+json; version=1
 access-token: <your access token>
 client: <your client id>
@@ -236,7 +236,7 @@ Content-Type: application/vnd.api+json
 ```
 
 ```shell
-curl "https://studio.cucumber.io/api/projects/<project_id>/actionwords/<actionword_id>" \
+curl "https://studio.cucumberstudio.com/api/projects/<project_id>/actionwords/<actionword_id>" \
     -H 'accept: application/vnd.api+json; version=1' \
     -H 'access-token: <your access token>' \
     -H 'uid: <your uid>' \
@@ -277,7 +277,7 @@ actionword_id | The ID of the action word you want to get
 ## Create an action word
 
 ```http
-POST https://studio.cucumber.io/api/projects/<project_id>/actionwords HTTP/1.1
+POST https://studio.cucumberstudio.com/api/projects/<project_id>/actionwords HTTP/1.1
 Content-Type: application/json; charset=utf-8
 Accept: application/vnd.api+json; version=1
 access-token: <your access token>
@@ -301,7 +301,7 @@ Content-Type: application/vnd.api+json
 ```
 
 ```shell
-curl -XPOST "https://studio.cucumber.io/api/projects/<project_id>/actionwords" \
+curl -XPOST "https://studio.cucumberstudio.com/api/projects/<project_id>/actionwords" \
     -H 'Content-Type: application/json' \
     -H 'accept: application/vnd.api+json; version=1' \
     -H 'access-token: <your access token>' \
@@ -365,7 +365,7 @@ errors will be in the "errors" attribute of the returned data.
 ## Update an action word
 
 ```http
-PATCH https://studio.cucumber.io/api/projects/<project_id>/actionwords/<actionword_id> HTTP/1.1
+PATCH https://studio.cucumberstudio.com/api/projects/<project_id>/actionwords/<actionword_id> HTTP/1.1
 Content-Type: application/json; charset=utf-8
 Accept: application/vnd.api+json; version=1
 access-token: <your access token>
@@ -392,7 +392,7 @@ Content-Type: application/vnd.api+json
 ```
 
 ```shell
-curl -XPATCH "https://studio.cucumber.io/api/projects/<project_id>/actionwords/<actionword_id>" \
+curl -XPATCH "https://studio.cucumberstudio.com/api/projects/<project_id>/actionwords/<actionword_id>" \
     -H 'Content-Type: application/json' \
     -H 'accept: application/vnd.api+json; version=1' \
     -H 'access-token: <your access token>' \
@@ -446,7 +446,7 @@ You can rename an action word and update its definition by specifying the new na
 ## Delete an action word
 
 ```http
-DELETE https://studio.cucumber.io/api/projects/<project_id>/actionwords/<actionword_id> HTTP/1.1
+DELETE https://studio.cucumberstudio.com/api/projects/<project_id>/actionwords/<actionword_id> HTTP/1.1
 Accept: application/vnd.api+json; version=1
 access-token: <your access token>
 client: <your client id>
@@ -459,7 +459,7 @@ Content-Type: application/vnd.api+json
 ```
 
 ```shell
-curl -XDELETE "https://studio.cucumber.io/api/projects/<project_id>/actionwords/<actionword_id>" \
+curl -XDELETE "https://studio.cucumberstudio.com/api/projects/<project_id>/actionwords/<actionword_id>" \
     -H 'accept: application/vnd.api+json; version=1' \
     -H 'access-token: <your access token>' \
     -H 'uid: <your uid>' \
@@ -482,7 +482,7 @@ Caution: your action word will be totaly and permanently removed from your proje
 ## Get an action word callers
 
 ```http
-GET https://studio.cucumber.io/api/projects/<project_id>/actionwords/<actionword_id>/callers HTTP/1.1
+GET https://studio.cucumberstudio.com/api/projects/<project_id>/actionwords/<actionword_id>/callers HTTP/1.1
 Accept: application/vnd.api+json; version=1
 access-token: <your access token>
 client: <your client id>
@@ -495,7 +495,7 @@ Content-Type: application/vnd.api+json
 ```
 
 ```shell
-curl "https://studio.cucumber.io/api/projects/<project_id>/actionwords/<actionword_id>/callers" \
+curl "https://studio.cucumberstudio.com/api/projects/<project_id>/actionwords/<actionword_id>/callers" \
     -H 'accept: application/vnd.api+json; version=1' \
     -H 'access-token: <your access token>' \
     -H 'uid: <your uid>' \
